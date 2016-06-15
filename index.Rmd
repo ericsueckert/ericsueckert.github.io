@@ -5,7 +5,12 @@ output: html_document
 
 Hi, welcome to my portfolio.
 
-You can find a summary of my github account [here](githubReport.html). It contains most of the projects I have done both in class and independantly.
+My name is Eric Eckert, 
+You can find a summary of my github account [here](githubReport.html). It contains most of the projects I have done both in class and independantly. [Here](https://github.com/ericsueckert) is the link to my actual Github profile.
+
+
+I have had some experience designing models with AutoCAD software. My best project is a simple model of a hidden blade inspired by the video game Assassin's Creed. 
+You can view the design [here](https://grabcad.com/library/assassin-s-creed-hidden-blade-5).
 
 
 

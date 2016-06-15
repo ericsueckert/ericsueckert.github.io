@@ -1,5 +1,5 @@
 ---
-title: "Github Summary"
+title: "index"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ avatar <- repo_df$owner.avatar_url[1]
 
 ```
 
-![](`r avatar`)
+![](imgs/Eric_Eckert_portrait.jpg)
 
 Hello.  
 The user `r user` has `r num_repos` repositories.
@@ -42,8 +42,8 @@ The user `r user` has `r num_repos` repositories.
 ```{r, echo=FALSE}
 # create a smaller data frame with some relevant information. make column titles more readable
 repo_df <- mutate(repo_df, date = format(as.Date(created_at), format="%B %d %Y"))
-small_repo_df <- select(repo_df, name, description, language, owner.login, date)
-names(small_repo_df) <- c("Name", "Description", "Language", "Owner ID", "Date Created")
+small_repo_df <- select(repo_df, name, description, forks_count, owner.login, date)
+names(small_repo_df) <- c("Name", "Description", "Number of Forks", "Owner ID", "Date Created")
 
 ```
 

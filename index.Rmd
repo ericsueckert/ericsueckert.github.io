@@ -3,7 +3,11 @@ title: "Eric Eckert"
 output: html_document
 ---
 
-Hi, welcome to my portfolio. 
+Hi, welcome to my portfolio.
+
+You can find a summary of my github account [here](githubReport.html). It contains most of the projects I have done both in class and independantly.
+
+
 
 ```{r, echo=FALSE, message=FALSE}
 summary(cars)

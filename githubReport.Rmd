@@ -1,0 +1,83 @@
+---
+title: "index"
+output: html_document
+---
+
+```{r, echo=FALSE, message=FALSE}
+# Include packages
+library(jsonlite)
+library(dplyr)
+library(knitr)
+
+# create variables for different parts of the query url
+access_token <- "?access_token=035bfac119146d61224807b2d9fbc935f04b9d63"
+base_url <- "https://api.github.com/users/"
+user <- "ericsueckert"
+parameters <- "&per_page=100&created=desc"
+
+# put together query url
+query_url <- paste0(base_url, user, access_token, parameters)
+
+# grab repository query url from user data from user query, then store repository data
+user_data <- fromJSON(query_url)
+repo_data <- fromJSON(user_data$repos_url)
+# flatten data so it is all visible in one df
+repo_df <- flatten(repo_data)
+
+# determine number of repositories and most forked repository
+num_repos <- nrow(repo_df)
+most_popular <- repo_df %>%
+  select(forks_count) %>%
+  filter(forks_count == max(forks_count))
+
+avatar <- repo_df$owner.avatar_url[1]
+
+```
+
+![User avatar](`r avatar`)
+
+
+Hello.  
+The user `r user` has `r num_repos` repositories, and the most popular one has `r most_popular` forks.
+
+```{r, echo=FALSE}
+# create a smaller data frame with some relevant information. make column titles more readable
+repo_df <- mutate(repo_df, date = format(as.Date(created_at), format="%B %d %Y"))
+small_repo_df <- select(repo_df, name, description, forks_count, owner.login, date)
+names(small_repo_df) <- c("Name", "Description", "Number of Forks", "Owner ID", "Date Created")
+
+```
+
+Here is a table showing the Name, descrption, number of forks, owner ID, and date created of each repository. 
+
+```{r, echo=FALSE}
+# display the table
+data_table <- kable(small_repo_df, format = "markdown")
+
+```
+
+`r data_table`  
+  
+Here is a table showing the number of repositories for each programming language, and the average number of forks per language.
+```{r, echo=FALSE}
+#create a table with some summary information from the repositories, make column names readable, and display
+summary_data <- repo_df %>%
+  group_by(language) %>%
+  summarise(
+    lang_repos = n(),
+    avg_forks = mean(forks_count)
+  )
+
+names(summary_data) <- c("Language", "Number of repositories", "Average number of forks")
+summary_table <- kable(summary_data, format = "markdown")
+
+
+```
+
+`r summary_table`  
+
+```{r, echo=FALSE}
+
+# A bar plot showing number of repositories per language
+barplot(table(repo_df$language))
+```

@@ -1,0 +1,123 @@
+---
+title: "USA Mass Shootings in 2015"
+output: html_document
+---
+```{r, echo=FALSE, message=FALSE}
+#requre packages
+library(jsonlite)
+library(dplyr)
+library(knitr)
+library(plotly)
+
+#Set working directory
+#setwd("/Users/Potato/Documents/Portfolio")
+#read in data
+df <- read.csv("data/Mass-Shooting-Data.csv")
+#add a column to show what will be displayed when mouse hovers over data point
+df$total <- df$injured + df$killed
+df$hover <- paste0(df$city, ", ", df$state, ": ", df$injured, " injured, ", df$killed, " killed.")
+
+#create a table that summarizes data
+summary_data <- df %>%summarise(
+  total_incidents = n(),
+  total_killed = sum(killed),
+  avg_killed = round(mean(killed), 2),
+  total_injuries = sum(injured),
+  avg_injured = round(mean(injured), 2),
+  total_casualties = sum(total),
+  avg_casualties = round(mean(total), 2)
+)
+
+#make table names readable
+names(summary_data) <- c("Total Incidents", "Total Killed", "Average Killed", "Total Injured", "Average Injured", 
+                         "Total Casualties", "Average Casualties")
+summary_table <- kable(summary_data, format = "markdown")
+
+#Find the incident which has most killed/most casualties.
+most_killed <- filter(df, killed == max(killed))
+most_casualties <- filter(df, total == max(total))
+
+#summarise data by state
+state_data <- df %>% group_by(state) %>%
+  summarise(
+    total_incidents = n(),
+    total_casualties = sum(total),
+    total_killed = sum(killed),
+    mean_casualties = round(mean(total), 2),
+    mean_killed = round(mean(killed), 2)
+  )
+
+#find noteworthy states using calculated data
+highest_incident_state <- filter(state_data, total_incidents == max(total_incidents))
+most_casualties_state <- filter(state_data, total_casualties == max(total_casualties))
+most_dangerous_state <- filter(state_data, mean_casualties == max(mean_casualties))
+most_deadly_state <- filter(state_data, mean_killed == max(mean_killed))
+
+
+names(state_data) <- c("State", "Total Incidents", "Total Casualties", "Total Killed", "Mean Casualties", "Mean Killed")
+state_table <- kable(state_data, format = "markdown")
+
+
+
+  
+```
+In 2015, there were `r summary_data$'Total Incidents'` _total shooting incidents_, which resulted in `r summary_data$'Total Injured'` injuries and `r summary_data$'Total Killed'` deaths. An overall total of `r summary_data$'Total Casualties'` casualties. The single shooting with the _most total casualties_ was in `r most_casualties$city`, `r most_casualties$state` on `r most_casualties$date`, with `r most_casualties$injured` injured and `r most_casualties$killed` dead. There were `r most_casualties$total` casualties. 
+
+### Summary of Shooting Data
+
+`r summary_table`
+
+## State Data
+
+The highest incident state was `r highest_incident_state$state`, which had `r highest_incident_state$total_incidents` incidents in 2015. The state with the most total casualties was `r most_casualties_state$state` which had `r most_casualties_state$total_casualties` casualties in 2015. The state which suffered the most casualties per incident was `r most_dangerous_state$state`, which had an average of `r most_dangerous_state$mean_casualties` casualties per incident. The state that had the most deaths per incident was `r most_deadly_state$state`, which had an average of `r most_deadly_state$mean_killed` deaths per incident.
+
+`r state_table`
+
+## Interactive Data
+
+Below is an interactive map, and an interactive scatterplot, both which include every incident. Roll over an incident with the cursor for more information. 
+
+
+```{r, echo=FALSE, message=FALSE}
+
+#layout parameters for map
+g <- list(
+  scope = 'usa',
+  projection = list(type = 'albers usa'),
+  showlakes = TRUE,
+  lakecolor = toRGB('grey75'),
+  showland = TRUE,
+  landcolor = toRGB("grey95"),
+  subunitwidth = 1,
+  countrywidth = 1,
+  subunitcolor = toRGB("gray75"),
+  countrycolor = toRGB("gray50")
+  
+)
+#plot map
+plot_ly(df, lon = lng, lat = lat, text = hover,
+        marker = list(size = total * 1.5, cmin = 0, cmax = 10, symbol = "circle-x"), 
+        type = 'scattergeo', 
+        locationmode = 'USA-states', 
+        color = killed,
+        colors = 'Reds',
+        opacity = total,
+        line = list(color = toRGB("red4"), width = 0.5)
+        ) %>%
+  layout(title = '2015 US city mass shootings', geo = g)
+
+#plot scatterplot: date vs casualties
+plot_ly(df, x = df$date, y = df$total,
+        marker = list(cmin = 0, cmax = 10, symbol = "circle-x"),
+        text = hover,
+        mode = "markers", 
+        name = "Casualties Over Time", 
+        color = killed, 
+        size = killed,
+        colors = "Reds",
+        opacity = total,
+        line = list(color = toRGB("red4"), width = 0.5)
+        ) %>%
+  layout(xaxis = list(title = "Date"), yaxis = list(title = "Casualties"))
+```
+

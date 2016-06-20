@@ -7,7 +7,7 @@ output: html_document
 
 Hi, welcome to my portfolio.
 
-My name is Eric Eckert. I am a third year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, but my love for physics also drove me to take classes in mechanical engineering.
+My name is Eric Eckert. I am a third year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, and my love for physics also led me to take classes in mechanical engineering. My current career aspirations lie in data science. 
 
 A current version of my resume is available [here](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0).
 
@@ -37,6 +37,20 @@ plot_ly(summary_data, x = language, y = total_repos,
 
 ```
 
+
+---
+
+### Info 498F
+Winter 2015 I took the experimental class Info 498F, "Technical Foundations". I picked up many useful skills in the class, including how to properly use source control (GitHub) individually and in a team setting. I also learned how to write in R. This portfolio page was made using the skills I learned. Here are some of the projects I made in this class:
+
+[Shooting Map](mappingshooting.html)
+An R markdown page that provides insight into shooting statistics in the United States using a data set of all US shootings in 2015. Includes an aggregate summary of all incidents, summary of incidents by state, an interactive map plot of all shootings, and an interactive graph of all shootings.
+
+[Iris Flowers](https://ericsueckert.shinyapps.io/a8-building-applications/)
+A Shiny web application that uses a data set of three species of Iris and their Sepal and Petal dimensions, and displays two dimesions in a graph. Simple widgets allow for changing of species, dimensions, and color.
+
+[College Admissions Data Visualization](https://ericsueckert.shinyapps.io/college_admissions_visualization/)
+A Shiny web application that reflects college admission statistics for colleges across the United States. Mainly focuses on admission rates and SAT scores. 
 
 ---
 

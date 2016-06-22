@@ -7,7 +7,7 @@ output: html_document
 
 Hi, welcome to my portfolio.
 
-My name is Eric Eckert. I am a third year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, and my love for physics also led me to take classes in mechanical engineering. My current career aspirations lie in data science. 
+My name is Eric Eckert. I am a third year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, and my love for physics also led me to take classes in mechanical engineering. My current career aspirations lie in data science.
 
 A current version of my resume is available [here](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0).
 
@@ -40,24 +40,63 @@ plot_ly(summary_data, x = language, y = total_repos,
 
 ---
 
-### Info 498F
-Winter 2015 I took the experimental class Info 498F, "Technical Foundations". I picked up many useful skills in the class, including how to properly use source control (GitHub) individually and in a team setting. I also learned how to write in R. This portfolio page was made using the skills I learned. Here are some of the noteable projects I made in this class:
+### Text Associator
+First major project in my Data Structures and Algorithms class. This was my first significant implementation of a hash table. The table stores data from a thesaurus, which contains words from the english language. Each word has a list of words that are related, or associated, with that word. 
 
-[Shooting Map](mappingshooting.html)
+In this project I wrote a class that would store this data, and methods that would alter it. This was accomplished by hashing each word with the built in hash function and storing it in the table. The value mapped to each has would be a set of all the words associated with the hashed word. The class contains elements to add and remove words, as well as add and remove word associations. The size of the table will change dynamically based on load factor. I used separate chaining in order to prevent collision. The purpose of this implementation was to have a runtime of O(1).
+
+You can view the repository [here](https://github.com/ericsueckert/text-associator).
+
+---
+
+### College Admissions Data Visualization
+The final project my group did for the class Info 498F. We were allowed full freedom on what to build. The only guidelines were: The project had to take a rich data set and present the data in a matter that would provide insight and perspective using the skills we learned throughout the course.
+
+When I was a junior and senior in high school, I remembered how lost I felt during the college admission process. There are thousands of colleges in the United States alone, and a student needs to eventually decide on one. The data set we decided on was data on college admission statistics from colleges across the United States. We decided to use this data to provide insight for prospective college students so they may have a better grasp of which schools they would want to target. 
+
+The application was built using the Shiny platform, which was designed exclusively for web applications written in R. Other resources we used include the library "dplyr", which contains many functions to make data wrangling simpler and more robust, and "plotly", which is a library that allows for easy generation of streamlined, rich, and aesthetic plots. Because there were 4 group members, this project was good practice in using source control with multiple contributors, especially resolving conflicts.
+
+The application itself may be viewed [here](https://ericsueckert.shinyapps.io/college_admissions_visualization/). It may take a minute or two to load in order to activate the application if no one has visited it recently.
+
+The repository may be viewed [here](https://github.com/ericsueckert/Final-Project-X).
+
+Although the project was turned in earlier this year, I may have plans to continue working on it.
+
+
+---
+
+###Text Based Game
+Summer of 2014, I had just finished my first year of undergraduate study, and my friend Thomas and I had nothing to do. Thomas came up with the idea to make a text based game, a simple type of game that has a player influenced storyline. A typical text game consists of many scenarios with a text description of what currently happened, then lists a few choices for what to do next that the player may choose from. Once the player makes a choice, the story progresses. 
+
+We programmed a basic application in Java to implement this sort of game based on a decision tree. In addition to the most basic feature of choosing story direction, we added items that the player can pick up, drop, or use as "keys" for certain story choices. We also added checkpoint resets in case the player was not satisfied with the choices he made and wanted to start over. The game was programmed with a simple GUI that had the appropriate buttons and fields for file loading and gameplay.
+
+The game data was stored in a text file, and read into the tree using recursion. At this time I had not learned about any other ways of storing data. In retrospect, it probably would have been far easier to store game data in Json or XML format, which might also have negated the need for using recursion to read in the data.
+
+
+You can view the repository for this application [here](https://github.com/ericsueckert/Text-based-game).
+
+
+---
+
+### Info 498F
+Winter 2015 I took the experimental class Info 498F, "Technical Foundations". I picked up many useful skills in the class, including how to properly use source control (GitHub) individually and in a team setting. I also learned how to write in R, more specifically data wranglign and visualization, and utilizing certain web service APIs. This portfolio page was made using the skills I learned. Here are some of the projects I made in this class:
+
+[Shooting Map](mappingshooting.html):
 An R markdown page that provides insight into shooting statistics in the United States using a data set of all US shootings in 2015. Includes an aggregate summary of all incidents, summary of incidents by state, an interactive map plot of all shootings, and an interactive graph of all shootings.
 
-[Iris Flowers](https://ericsueckert.shinyapps.io/a8-building-applications/)
-A Shiny web application that uses a data set of three species of Iris and their Sepal and Petal dimensions, and displays two dimesions in a graph. Simple widgets allow for changing of species, dimensions, and color.
+[Github Report](githubReport.html):
+This page was linked at the top of my portfolio as well. It uses GitHub's web service API to query data on a user, in this case me, and displays certain data. On this page you may see various statistics regarding my repositories.
 
-[College Admissions Data Visualization](https://ericsueckert.shinyapps.io/college_admissions_visualization/)
-A Shiny web application that reflects college admission statistics for colleges across the United States. Mainly focuses on admission rates and SAT scores. 
+[Iris Flowers](https://ericsueckert.shinyapps.io/a8-building-applications/):
+A basic Shiny web application that uses a data set of three species of Iris and their Sepal and Petal dimensions, and displays two dimesions in a graph. Simple widgets allow for changing of species, dimensions, and color.
+
 
 ---
 
 ### Research
 <img src="imgs/afo.jpg" alt="photo" style="width: 400px;"/><img src="imgs/Ankle_moment_right_foot.jpg" alt="photo" style="width: 400px;"/>
 
-I am very passionate about my research. I work in the [UW Steele Ability Lab](http://depts.washington.edu/uwsteele/) that researches orthotics. The project I work on specifically is optimizing ankle foot orthoses, or AFOs. I began my research in fall of 2015, and am still a part of the lab.
+I am very passionate about my research. I work in the [UW Steele Ability Lab](http://depts.washington.edu/uwsteele/) that researches orthotics. The project I work on specifically is optimizing ankle foot orthoses, or AFOs. I began my research in fall of 2015, and am still a part of the lab. This project means a lot to me, because around the time when I started, I began to doubt my ability to succeed in the traditional academic system, but this research was able to give me purpose in the hopes that one day I may change someone's life.
 
 Ankle foot orthoses (or AFO for short) are commonly perscribed to individuals with impairment of the lower leg. AFOs aid in gait by inducing a moment on the ankle joint, reducing the need for biological ankle moment output by combining it with the mechanical ankle moment ouput of the AFO. For impaired individuals who are not able to produce full standard biological ankle moment output, the ankle moment of the AFO will supplement the biological ankle moment so that the total ankle moment will be on par with that of an unimpaired individual. AFOs have also been shown to reduce metabolic cost in unimpaired individuals.
 

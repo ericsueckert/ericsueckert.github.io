@@ -8,12 +8,16 @@ output: html_document
 library(jsonlite)
 library(dplyr)
 library(knitr)
+
+setwd("C:/Users/v-erecke/Documents/ericsueckert.github.io")
+
 source("scripts/github-api.R")
 
 user <- "ericsueckert"
 repo_df <- getUserInfo(user)
 
 # determine number of repositories and most forked repository
+
 num_repos <- nrow(repo_df)
 most_popular <- repo_df %>%
   select(forks_count) %>%
@@ -70,4 +74,5 @@ summary_table <- kable(summary_data, format = "markdown")
 
 # A bar plot showing number of repositories per language
 barplot(table(repo_df$language))
+
 ```

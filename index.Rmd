@@ -102,16 +102,20 @@ Ankle foot orthoses (or AFO for short) are commonly perscribed to individuals wi
 
 The current standard of AFO consists of a single piece of plastic that the patient may wear. The fabrication process is both lengthy and expensive. Additionally if adjustments are desired, the AFO must be completely refabricated. Alternatively, a variable stiffness AFO would allow for adjustments of the mechanical moment of the AFO if needed. The purpose of our project is to manufacture effective variable stiffness AFOs using 3D printing technology.
 
+Through classes and my time at the lab, I also learned how to program in MatLab. One example of my work is a script I wrote that takes kinematic data of the ankle joint, and draws a plot of ankle moment over a single gait cycle in addition to the mechanical moment induced by various polymer bands over gait cycle. You can view the repository for this script [here](https://github.com/ericsueckert/plot_ankle_moment).
+
 June 3 I attended my first conference, the [NorthWestern Biomechanics Symposium](http://www.nwbs.mech.ubc.ca/), which this year was held in Vancouver, BC in Canada. You can read the abstract [here](https://www.dropbox.com/home?preview=NWBS+2016+Abstract.pdf).
 
 <img src="imgs/NWBS.JPG" alt="photo" style="width: 400px;"/>
 
+If you are interested in learning more about the laboratory I work in, you can access the website [here](http://depts.washington.edu/uwsteele/). The project that I work on can be found as "Optimizing Orthoses" under the "Projects" tab. Here you can read a short summary of our project research, as well as view notable news regarding our project and team members. Official major publications by lab members may be found under the "Publications" tab.
 
 ---
 
 ### Design
 <img src="imgs/hiddenblade.png" alt="photo" style="width: 400px;"/>
 
-I have had some experience designing models with AutoCAD software. My best project is a simple model of a hidden blade inspired by the video game Assassin's Creed. 
+In my second year of undergraduate study, I took a class in introductory AutoCad drawing. My final project is a simple model of a hidden blade inspired by the video game Assassin's Creed. The assembly contains 11 unique parts, and is fully defined. When the spring is removed, the appropriate constraints are in place so that parts may be moved. Also included is an exploded view drawing.
+
 You can view the design [here](https://grabcad.com/library/assassin-s-creed-hidden-blade-5).
 

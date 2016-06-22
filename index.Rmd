@@ -41,7 +41,7 @@ plot_ly(summary_data, x = language, y = total_repos,
 ---
 
 ### Info 498F
-Winter 2015 I took the experimental class Info 498F, "Technical Foundations". I picked up many useful skills in the class, including how to properly use source control (GitHub) individually and in a team setting. I also learned how to write in R. This portfolio page was made using the skills I learned. Here are some of the projects I made in this class:
+Winter 2015 I took the experimental class Info 498F, "Technical Foundations". I picked up many useful skills in the class, including how to properly use source control (GitHub) individually and in a team setting. I also learned how to write in R. This portfolio page was made using the skills I learned. Here are some of the noteable projects I made in this class:
 
 [Shooting Map](mappingshooting.html)
 An R markdown page that provides insight into shooting statistics in the United States using a data set of all US shootings in 2015. Includes an aggregate summary of all incidents, summary of incidents by state, an interactive map plot of all shootings, and an interactive graph of all shootings.
@@ -58,6 +58,10 @@ A Shiny web application that reflects college admission statistics for colleges 
 <img src="imgs/afo.jpg" alt="photo" style="width: 400px;"/><img src="imgs/Ankle_moment_right_foot.jpg" alt="photo" style="width: 400px;"/>
 
 I am very passionate about my research. I work in the [UW Steele Ability Lab](http://depts.washington.edu/uwsteele/) that researches orthotics. The project I work on specifically is optimizing ankle foot orthoses, or AFOs. I began my research in fall of 2015, and am still a part of the lab.
+
+Ankle foot orthoses (or AFO for short) are commonly perscribed to individuals with impairment of the lower leg. AFOs aid in gait by inducing a moment on the ankle joint, reducing the need for biological ankle moment output by combining it with the mechanical ankle moment ouput of the AFO. For impaired individuals who are not able to produce full standard biological ankle moment output, the ankle moment of the AFO will supplement the biological ankle moment so that the total ankle moment will be on par with that of an unimpaired individual. AFOs have also been shown to reduce metabolic cost in unimpaired individuals.
+
+The current standard of AFO consists of a single piece of plastic that the patient may wear. The fabrication process is both lengthy and expensive. Additionally if adjustments are desired, the AFO must be completely refabricated. Alternatively, a variable stiffness AFO would allow for adjustments of the mechanical moment of the AFO if needed. The purpose of our project is to manufacture effective variable stiffness AFOs using 3D printing technology.
 
 <img src="imgs/NWBS.JPG" alt="photo" style="width: 400px;"/>
 

@@ -132,7 +132,7 @@ Since my Freshman year of high school, one of my lesser interests has been in fi
 ##### Directing & camera: Ted Leung
 ##### Editing & animation: Eric Eckert
 
-<iframe src="https://player.vimeo.com/video/58243779" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/58243779?color=ff9933" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/58243779">LEO club mixer: A Trip Down Memory Lane</a> from <a href="https://vimeo.com/luciferthesecond">Eric Eckert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 My high school's film club had gone inactive due to lack of members my freshman year. In my senior year a couple of my classmates created a new similar club called the Flash Film Club, although it was dedicated more towards making short internet videos rather than study true film. Although I was not officially a member, they often contacted me for help in editing their videos since I was the most experienced video editor in the school. Sometime during my senior year, a different community service club called the LEO club planned to hold a mixer to raise money, and asked the Flash Film Club to help film a promotional video for the event. I was asked to edit the video. Unfortunately the event was cancelled due to poor planning, but the video is still an example of the Film Club's and my work.
@@ -142,7 +142,7 @@ My high school's film club had gone inactive due to lack of members my freshman 
 #### Siddhardha Malladi for DECA Vice President of Public Relations
 ##### Motion Design by Eric Eckert
 
-<iframe src="https://player.vimeo.com/video/58959277" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/58959277?color=ffffff" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/58959277">Siddhardha Malladi DECA Campaign</a> from <a href="https://vimeo.com/luciferthesecond">Eric Eckert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 This was my first pure kinetic typography project. I did not have a lot of time to complete it, so it is far from perfect. A student in my school was running for an officer position of the club organization DECA, and required a campaign video. A mutual friend referred him to me for the project, and thus I was contracted to animate the video. 
@@ -151,7 +151,7 @@ This was my first pure kinetic typography project. I did not have a lot of time 
 
 #### Reflection of my Research
 
-<iframe src="https://player.vimeo.com/video/170867350" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/170867350?color=c9ff23" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/170867350">Informatics: An innovative project</a> from <a href="https://vimeo.com/luciferthesecond">Eric Eckert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 Present a project you are proud of that demonstrates innovation or leadership. This was one of the prompts I answered in my application to the Informatics major. I had the option of either writing a short essay, or making a 90 second video. I decided to take a leap of faith and create a video. 90 seconds is not a lot of time to present anything, but this work was an insightful revisit to film after not having made any videos for years for two reasons. First, it forced me to be concise. One of the greatest challenges in editing videos is knowing where to cut. Even just a few frames can change the pace and rythm of the video dramatically. But more importantly this video forced me to think about how to telegraph my intent properly. Most all works have intent from the creator, but it is a difficult matter to accurately convey that intent to the audience. What can you say about me from having seen this video?

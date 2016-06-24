@@ -56,7 +56,7 @@ When I was a junior and senior in high school, I remembered how lost I felt duri
 
 The application was built using the Shiny platform, which was designed exclusively for web applications written in R. Other resources we used include the library "dplyr", which contains many functions to make data wrangling simpler and more robust, and "plotly", which is a library that allows for easy generation of streamlined, rich, and aesthetic plots. Because there were 4 group members, this project was good practice in using source control with multiple contributors, especially resolving conflicts.
 
-The application itself may be viewed [here](https://ericsueckert.shinyapps.io/college_admissions_visualization/). It may take a minute or two to load in order to activate the application if no one has visited it recently.
+The application itself may be viewed [here](https://ericsueckert.shinyapps.io/college_admissions_app/). It may take a minute or two to load in order to activate the application if no one has visited it recently.
 
 The repository may be viewed [here](https://github.com/ericsueckert/Final-Project-X).
 

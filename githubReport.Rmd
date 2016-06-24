@@ -9,7 +9,7 @@ library(jsonlite)
 library(dplyr)
 library(knitr)
 
-setwd("C:/Users/v-erecke/Documents/ericsueckert.github.io")
+# setwd("C:/Users/v-erecke/Documents/ericsueckert.github.io")
 
 source("scripts/github-api.R")
 

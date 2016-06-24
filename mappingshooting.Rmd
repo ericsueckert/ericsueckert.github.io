@@ -118,6 +118,6 @@ plot_ly(df, x = df$date, y = df$total,
         opacity = total,
         line = list(color = toRGB("red4"), width = 0.5)
         ) %>%
-  layout(xaxis = list(title = "Date"), yaxis = list(title = "Casualties"))
+  layout(xaxis = list(title = "Date"), yaxis = list(title = "Casualties"), hovermode = "closest")
 ```
 

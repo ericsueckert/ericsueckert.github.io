@@ -51,6 +51,15 @@ plot_ly(summary_data, x = language, y = total_repos,
 
 ---
 
+### Flight Book
+One of the later projects in my Database Management class. This was the first instance of creating a real application that uses SQL to communicate with a database. 
+
+From earlier in the quarter I had ingested some data of flights in 2015 (about 1 million lines) into Microsoft Azure. Additionally, I added tables to represent users of the application, as well as what flights they had "reserved". Then, provided with a program skeleton, I wrote a Java application that would connect to this database. The user would be able to search for flights with multiple parameters for origin, destination, date, direct flight or transfer, and number of results. In order to book a flight, the user has to log in. The program will check the username and password against the user table in the database. If loggd in, the user may perform other actions. If a search had been made, the user may specify which itinerary to book, and if there are no date conflicts, may book that itinerary. The user may also view his reservations, and cancel them. All queries were submitted using prepared statements to prevent code injection. Transactions were used wherever necessary to ensure no errors occured during any processes.
+
+You can view the repository [here](https://github.com/ericsueckert/flight-book).
+
+---
+
 ### Text Associator
 First major project in my Data Structures and Algorithms class. This was my first significant implementation of a hash table. The table stores data from a thesaurus, which contains words from the english language. Each word has a list of words that are related, or associated, with that word. 
 

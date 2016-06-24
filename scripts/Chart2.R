@@ -24,12 +24,12 @@ chart2 = function(dataset) {
      x = How.many.countries.have.you.visited.in.your.life.,
      type = "box",
      color = What.is.your.current.class.standing.
-  )
+  ) %>%
   
   # Set the title of the chart
   layout(
-    title = "Distribution of countries traveled by academic year"
-  )
+    title = "Distribution of Countries Traveled by Academic Year",
+    xaxis = list(title = "Countries visited"))
   
   return(output)
 }

@@ -11,9 +11,12 @@ map<- function(data){
   data = data$How.many.countries.have.you.visited.in.your.life.
   histogram<- hist(
               data, 
-              breaks=12, col="grey65", 
+              breaks=12, 
+              col="grey65", 
               main= "Histogram from Survey Data", 
-              border="blue")
+              border="blue",
+              xlab = "Countries visited",
+              ylab = "Number of Students")
   return(histogram)
 }
 

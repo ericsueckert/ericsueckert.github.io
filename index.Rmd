@@ -92,14 +92,19 @@ You can view the repository for this application [here](https://github.com/erics
 ### Info 498F
 Winter 2015 I took the experimental class Info 498F, "Technical Foundations". I picked up many useful skills in the class, including how to properly use source control (GitHub) individually and in a team setting. I also learned how to write in R, more specifically data wranglign and visualization, and utilizing certain web service APIs. This portfolio page was made using the skills I learned. Here are some of the projects I made in this class:
 
-[Shooting Map](mappingshooting.html):
-An R markdown page that provides insight into shooting statistics in the United States using a data set of all US shootings in 2015. Includes an aggregate summary of all incidents, summary of incidents by state, an interactive map plot of all shootings, and an interactive graph of all shootings.
+
 
 [Github Report](githubReport.html):
 This page was linked at the top of my portfolio as well. It uses GitHub's web service API to query data on a user, in this case me, and displays certain data. On this page you may see various statistics regarding my repositories.
 
 [Iris Flowers](https://ericsueckert.shinyapps.io/a8-building-applications/):
 A basic Shiny web application that uses a data set of three species of Iris and their Sepal and Petal dimensions, and displays two dimesions in a graph. Simple widgets allow for changing of species, dimensions, and color.
+
+[Shooting Map](mappingshooting.html):
+An R markdown page that provides insight into shooting statistics in the United States using a data set of all US shootings in 2015. Includes an aggregate summary of all incidents, summary of incidents by state, an interactive map plot of all shootings, and an interactive graph of all shootings.
+
+[Info 498 Students](info498.html):
+An R markdown page that provides simple statistics on the students enrolled in the Info 498F class. Although very straightforward, this was the first group project, and practice in using source control with multiple contributors (int this case four). 
 
 
 ---

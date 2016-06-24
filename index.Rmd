@@ -60,7 +60,7 @@ The application itself may be viewed [here](https://ericsueckert.shinyapps.io/co
 
 The repository may be viewed [here](https://github.com/ericsueckert/Final-Project-X).
 
-Although the project was turned in earlier this year, I may have plans to continue working on it.
+Although the project was turned in earlier this year, I may have plans to continue working on it. As such, you may find minor bugs in the application. Please let me know if you notice something!
 
 
 ---

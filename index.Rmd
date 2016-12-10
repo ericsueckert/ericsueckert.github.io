@@ -137,7 +137,7 @@ If you are interested in learning more about the laboratory I work in, you can a
 
 ---
 
-### Design
+### CAD
 <img src="imgs/hiddenblade.png" alt="photo" style="width: 400px;"/>
 
 In my second year of undergraduate study, I took a class in introductory AutoCad drawing. My final project is a simple model of a hidden blade inspired by the video game Assassin's Creed. The assembly contains 11 unique parts, and is fully defined. When the spring is removed, the appropriate constraints are in place so that parts may be moved. Also included is an exploded view drawing.

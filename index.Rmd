@@ -2,14 +2,10 @@
 title: "Eric Eckert"
 output: 
   html_document:
-    css: css/skeleton.css
+    theme: spacelab
 ---
 
-[Resume](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0)
-
-[LinkedIn](https://www.linkedin.com/in/ericsueckert)
-
-[GitHub](https://github.com/ericsueckert)
+[Resume](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0) | [LinkedIn](https://www.linkedin.com/in/ericsueckert) | [GitHub](https://github.com/ericsueckert)
 
 School email: eric95@uw.edu
 
@@ -24,12 +20,29 @@ My name is Eric Eckert. I am a third year student at the University of Washingto
 
 A current version of my resume is available [here](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0).
 
+
+----
+
+### Experience
+
+#### Microsoft
+Intern | Bing Search | Beijing, PRC | June 2016 -- September 2016
+
+##### Tweet Clustering
+I Worked on social trending news detection for the news vertical of the Bing search engine. Developed a new multi level clustering algorithm from scratch to identify trending news worthy stories in Twitter data with less latency. Leveraged and modified various document similarity statistics among other Tweet data to process, filter, then cluster Tweets after querying, which were then used for secondary clustering. Successfully aggregated results with under 1000 news-worthy clusters, some with 10,000 or more Tweets.
+
+##### Spam User Detection
+Aided in research and optimization of Twitter user spam detection by training a machine learning model for classification, and analyzing the results. Leveraged SVM machine learning model using libSVM. Analyzed false positives of results and further improved accuracy by expanding training set. Version 1 had an initial F1 score of 96%.
+
+_References available upon request._
+
+
 -----
 
-### Programming
+### Programming projects
 You can find a summary of my github account [here](githubReport.html). It contains most of the projects I have done both in class and independantly. I've had experience programming in various contexts. [Here](https://github.com/ericsueckert) is the link to my actual Github profile.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(jsonlite)
 library(plotly)
 library(dplyr)
@@ -53,7 +66,7 @@ plot_ly(summary_data, x = language, y = total_repos,
 
 ---
 
-### Flight Book
+#### Flight Book
 One of the later projects in my Database Management class. This was the first instance of creating a real application that uses SQL to communicate with a database. 
 
 From earlier in the quarter I had ingested some data of flights in 2015 (about 1 million lines) into Microsoft Azure. Additionally, I added tables to represent users of the application, as well as what flights they had "reserved". Then, provided with a program skeleton, I wrote a Java application that would connect to this database. The user would be able to search for flights with multiple parameters for origin, destination, date, direct flight or transfer, and number of results. In order to book a flight, the user has to log in. The program will check the username and password against the user table in the database. If loggd in, the user may perform other actions. If a search had been made, the user may specify which itinerary to book, and if there are no date conflicts, may book that itinerary. The user may also view his reservations, and cancel them. All queries were submitted using prepared statements to prevent code injection. Transactions were used wherever necessary to ensure no errors occured during any processes.
@@ -62,7 +75,7 @@ You can view the repository [here](https://github.com/ericsueckert/flight-book).
 
 ---
 
-### Text Associator
+#### Text Associator
 First major project in my Data Structures and Algorithms class. This was my first significant implementation of a hash table. The table stores data from a thesaurus, which contains words from the english language. Each word has a list of words that are related, or associated, with that word. 
 
 In this project I wrote a class that would store this data, and methods that would alter it. This was accomplished by hashing each word with the built in hash function and storing it in the table. The value mapped to each has would be a set of all the words associated with the hashed word. The class contains elements to add and remove words, as well as add and remove word associations. The size of the table will change dynamically based on load factor. I used separate chaining in order to prevent collision. The purpose of this implementation was to have a runtime of O(1).
@@ -71,7 +84,7 @@ You can view the repository [here](https://github.com/ericsueckert/text-associat
 
 ---
 
-### College Admissions Data Visualization
+#### College Admissions Data Visualization
 The final project my group did for the class Info 498F. We were allowed full freedom on what to build. The only guidelines were: The project had to take a rich data set and present the data in a matter that would provide insight and perspective using the skills we learned throughout the course.
 
 When I was a junior and senior in high school, I remembered how lost I felt during the college admission process. There are thousands of colleges in the United States alone, and a student needs to eventually decide on one. The data set we decided on was data on college admission statistics from colleges across the United States. We decided to use this data to provide insight for prospective college students so they may have a better grasp of which schools they would want to target. 
@@ -87,7 +100,7 @@ Although the project was turned in earlier this year, I may have plans to contin
 
 ---
 
-###Text Based Game
+#### Text Based Game
 Summer of 2014, I had just finished my first year of undergraduate study, and my friend Thomas and I had nothing to do. Thomas came up with the idea to make a text based game, a simple type of game that has a player influenced storyline. A typical text game consists of many scenarios with a text description of what currently happened, then lists a few choices for what to do next that the player may choose from. Once the player makes a choice, the story progresses. 
 
 We programmed a basic application in Java to implement this sort of game based on a decision tree. In addition to the most basic feature of choosing story direction, we added items that the player can pick up, drop, or use as "keys" for certain story choices. We also added checkpoint resets in case the player was not satisfied with the choices he made and wanted to start over. The game was programmed with a simple GUI that had the appropriate buttons and fields for file loading and gameplay.
@@ -121,6 +134,9 @@ An R markdown page that provides simple statistics on the students enrolled in t
 ---
 
 ### Research
+
+#### Ankle Foot Orthoses
+
 <img src="imgs/afo.jpg" alt="photo" style="width: 400px;"/><img src="imgs/Ankle_moment_right_foot.jpg" alt="photo" style="width: 400px;"/>
 
 I am very passionate about my research. I work in the [UW Steele Ability Lab](http://depts.washington.edu/uwsteele/) that researches orthotics. The project I work on specifically is optimizing ankle foot orthoses, or AFOs. I began my research in fall of 2015, and am still a part of the lab. This project means a lot to me, because around the time when I started, I began to doubt my ability to succeed in the traditional academic system, but this research was able to give me purpose in the hopes that one day I may change someone's life.
@@ -131,16 +147,29 @@ The current standard of AFO consists of a single piece of plastic that the patie
 
 Through classes and my time at the lab, I also learned how to program in MatLab. One example of my work is a script I wrote that takes kinematic data of the ankle joint, and draws a plot of ankle moment over a single gait cycle in addition to the mechanical moment induced by various polymer bands over gait cycle. You can view the repository for this script [here](https://github.com/ericsueckert/plot_ankle_moment).
 
-June 3 I attended my first conference, the [NorthWestern Biomechanics Symposium](http://www.nwbs.mech.ubc.ca/), which this year was held in Vancouver, BC in Canada. You can read the abstract [here](https://www.dropbox.com/home?preview=NWBS+2016+Abstract.pdf).
+June 3, 2016 I attended my first conference, the [NorthWestern Biomechanics Symposium](http://www.nwbs.mech.ubc.ca/), which this year was held in Vancouver, BC in Canada. You can read the abstract [here](https://www.dropbox.com/home?preview=NWBS+2016+Abstract.pdf).
 
 <img src="imgs/NWBS.JPG" alt="photo" style="width: 400px;"/>
+
+
+#### Disability Stakeholder Research
+
+This year in 2017 I am working with post-doctorate [Heather Feldner](https://depts.washington.edu/uwsteele/team_member/heather-feldner/) in analyzing stakeholder perceptions of human ability and disability. By holding interviews and focus groups with stakeholders, we can record their responses and conduct a qualitative analysis of the transcript. I will be approaching the issue from a more qualitative angle by writing an algorithm that will aggregate the diction in the transcript, which may provide more insight into stakeholder feedback.
 
 If you are interested in learning more about the laboratory I work in, you can access the website [here](http://depts.washington.edu/uwsteele/). The project that I work on can be found as "Optimizing Orthoses" under the "Projects" tab. Here you can read a short summary of our project research, as well as view notable news regarding our project and team members. Official major publications by lab members may be found under the "Publications" tab.
 
 ---
 
+### Design
+
+[<img src="imgs/911.png" alt="photo" style="width: 800px;"/>](http://responsive911.webflow.io/)
+
+Autumn 2016 was my first quarter in the Human Centered Design and Engineering major, and it proved to be very fruitful with my first prototyping project, which you will find [here](http://responsive911.webflow.io/).
+
+---
+
 ### CAD
-<img src="imgs/hiddenblade.png" alt="photo" style="width: 400px;"/>
+[<img src="imgs/hiddenblade.png" alt="photo" style="width: 400px;"/>](https://grabcad.com/library/assassin-s-creed-hidden-blade-5)
 
 In my second year of undergraduate study, I took a class in introductory AutoCad drawing. My final project is a simple model of a hidden blade inspired by the video game Assassin's Creed. The assembly contains 11 unique parts, and is fully defined. When the spring is removed, the appropriate constraints are in place so that parts may be moved. Also included is an exploded view drawing.
 

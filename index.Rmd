@@ -5,7 +5,7 @@ output:
     theme: spacelab
 ---
 
-[Resume](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0) | [LinkedIn](https://www.linkedin.com/in/ericsueckert) | [GitHub](https://github.com/ericsueckert)
+[Resume](https://drive.google.com/file/d/0B9X8wMk6UkJ_UjFYTDlxR2U2eWs/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/ericsueckert) | [GitHub](https://github.com/ericsueckert)
 
 School email: eric95@uw.edu
 
@@ -16,20 +16,23 @@ Personal email: ericsueckert@gmail.com
 
 Hi, welcome to my portfolio.
 
-My name is Eric Eckert. I am a third year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, and my love for physics also led me to take classes in mechanical engineering. My current career aspirations lie in data science.
+My name is Eric Eckert. I am a fourth year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, and my love for physics also led me to take classes in mechanical engineering. My current career aspirations lie in software development with an interest in data relevance and classification.
 
-A current version of my resume is available [here](https://www.dropbox.com/s/epynqyth4lju63r/Eric_Eckert%20resume%20June%2014%2C%202016.pdf?dl=0).
+A current version of my resume is available [here](https://drive.google.com/file/d/0B9X8wMk6UkJ_UjFYTDlxR2U2eWs/view?usp=sharing).
 
 
 ----
 
 ### Experience
 
+
 #### Microsoft
 Intern | Bing Search | Beijing, PRC | June 2016 -- September 2016
 
+
 ##### Tweet Clustering
 I Worked on social trending news detection for the news vertical of the Bing search engine. Developed a new multi level clustering algorithm from scratch to identify trending news worthy stories in Twitter data with less latency. Leveraged and modified various document similarity statistics among other Tweet data to process, filter, then cluster Tweets after querying, which were then used for secondary clustering. Successfully aggregated results with under 1000 news-worthy clusters, some with 10,000 or more Tweets.
+
 
 ##### Spam User Detection
 Aided in research and optimization of Twitter user spam detection by training a machine learning model for classification, and analyzing the results. Leveraged SVM machine learning model using libSVM. Analyzed false positives of results and further improved accuracy by expanding training set. Version 1 had an initial F1 score of 96%.

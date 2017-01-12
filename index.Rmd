@@ -162,7 +162,7 @@ If you are interested in learning more about the laboratory I work in, you can a
 
 ### Design
 
-[<img src="imgs/911.png" alt="photo" style="width: 800px;"/>](http://responsive911.webflow.io/)
+[<img src="imgs/911.png" alt="photo" style="width: 900px;"/>](http://responsive911.webflow.io/)
 
 Autumn 2016 was my first quarter in the Human Centered Design and Engineering major, and it proved to be very fruitful with my first prototyping project, which you will find [here](http://responsive911.webflow.io/).
 

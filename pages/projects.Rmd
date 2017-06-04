@@ -22,7 +22,7 @@ plot_ly(summary_data, x = language, y = total_repos,
         type = 'bar',
         color = total_repos
         ) %>%
-  layout(xaxis = list(title = "Language"), yaxis = list(title = "Number of Repositories"))
+git <-  layout(xaxis = list(title = "Language"), yaxis = list(title = "Number of Repositories"))
 
 ```
 

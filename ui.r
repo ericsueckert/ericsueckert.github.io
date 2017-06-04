@@ -2,7 +2,7 @@
 library(shiny)
 library(jsonlite)
 library(plotly)
-library(dplyr)
+#library(dplyr)
 library(shinythemes)
 
 #rmdfiles <- c("pages/projects.Rmd")

@@ -78,8 +78,15 @@ You can view the repository [here](https://github.com/ericsueckert/flight-book).
 
 ---
 
+#### Calculator Compiler
+Simple calculator compiler written in Ruby. Calculator language supports addition, subtraction, multiplication, division, power, and square root. Can store values in variables, also had commands to clear and list variable assignments, and quit. The calculator can be run directly in the terminal by running the script, or may be run with a parameter text file containing a script, which will then be executed. Scanner and parser are implemented separately, and the parser leverages left-hand recursive parsing.
+
+The repository is available [here](https://github.com/ericsueckert/calc_compiler)
+
+---
+
 #### Text Associator
-First major project in my Data Structures and Algorithms class. This was my first significant implementation of a hash table. The table stores data from a thesaurus, which contains words from the english language. Each word has a list of words that are related, or associated, with that word. 
+Uses a hash table to store data from a thesaurus, which contains words from the english language. Each word has a list of words that are related, or associated, with that word. 
 
 In this project I wrote a class that would store this data, and methods that would alter it. This was accomplished by hashing each word with the built in hash function and storing it in the table. The value mapped to each has would be a set of all the words associated with the hashed word. The class contains elements to add and remove words, as well as add and remove word associations. The size of the table will change dynamically based on load factor. I used separate chaining in order to prevent collision. The purpose of this implementation was to have a runtime of O(1).
 

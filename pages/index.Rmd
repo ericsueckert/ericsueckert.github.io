@@ -1,0 +1,23 @@
+---
+title: "Eric Eckert"
+output: 
+  html_document:
+    theme: spacelab
+---
+
+[Resume](https://drive.google.com/file/d/0B9X8wMk6UkJ_cElpMlFCbUVPOHM/view?usp=sharing) | [LinkedIn](https://www.linkedin.com/in/ericsueckert) | [GitHub](https://github.com/ericsueckert)
+
+School email: eric95@uw.edu
+
+Personal email: ericsueckert@gmail.com
+
+
+<img src="imgs/Eric_Eckert_portrait.jpg" alt="photo" style="width: 300px;"/>
+
+Hi, welcome to my portfolio.
+
+My name is Eric Eckert. I am a fourth year student at the University of Washington in Seattle. I have interests in a wide variety of subjects. My main skills lie in computer programming, and my love for physics also led me to take classes in mechanical engineering. My current career aspirations lie in software development with an interest in data relevance and classification.
+
+A current version of my resume is available [here](https://drive.google.com/file/d/0B9X8wMk6UkJ_UjFYTDlxR2U2eWs/view?usp=sharing).
+
+_References available upon request._

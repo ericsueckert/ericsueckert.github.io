@@ -1,0 +1,27 @@
+---
+title: "Experience"
+output: 
+  html_document:
+    theme: spacelab
+---
+
+### Experience
+
+
+#### Microsoft
+Intern | Bing Search | Beijing, PRC | June 2016 -- September 2016
+
+
+##### Tweet Clustering
+I Worked on social trending news detection for the news vertical of the Bing search engine. Developed a new multi level clustering algorithm from scratch to identify trending news worthy stories in Twitter data with less latency. Leveraged and modified various document similarity statistics among other Tweet data to process, filter, then cluster Tweets after querying, which were then used for secondary clustering. Successfully aggregated results with under 1000 news-worthy clusters, some with 10,000 or more Tweets.
+
+
+##### Spam User Detection
+Aided in research and optimization of Twitter user spam detection by training a machine learning model for classification, and analyzing the results. Leveraged SVM machine learning model using libSVM. Analyzed false positives of results and further improved accuracy by expanding training set. Version 1 had an initial F1 score of 96%.
+
+#### Digital Media Academy
+Instructor | San Diego, CA | June 2015 -- August 2015
+
+Full time instruction of various courses in programming, Minecraft modding, game design of children 8-12 years.
+
+[<img src="imgs/dma.png" alt="photo" style="width: 300px;"/>](https://www.digitalmediaacademy.org/southern-california-tech-camps/university-of-california-san-diego/)
